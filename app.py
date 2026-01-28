@@ -78,7 +78,7 @@ with tab2:
 
     fig2.add_trace(go.Scatter(
         x=df['Ano'], y=df['Crescimento_%'], mode='lines+markers+text',
-        name='Variação % Anual', line=dict(color='black', width=3),
+        name='Variação % Anual', line=dict(color='gold', width=3),
         text=[f"{v:.1f}%" if pd.notnull(v) else "" for v in df['Crescimento_%']],
         textposition="top center"
     ), secondary_y=True)
