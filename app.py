@@ -58,7 +58,7 @@ with tab1:
         title="Estoque Nominal da Dívida (Trilhões de R$)",
         xaxis=dict(type='category', title="Ano"),
         template='plotly_white',
-        height=550,
+        height=500,
         margin=dict(t=30, b=0, l=0, r=0),
         legend=dict(orientation="h", y=-0.2, x=0.5, xanchor="center")
     )
@@ -88,7 +88,7 @@ with tab2:
         title="Correlação: Estoque vs. Velocidade de Crescimento",
         xaxis=dict(type='category', title="Ano"),
         template='plotly_white',
-        height=550,
+        height=500,
         margin=dict(t=30, b=0, l=0, r=0),
         legend=dict(orientation="h", y=-0.2, x=0.5, xanchor="center")
     )
