@@ -32,8 +32,8 @@ for i in range(1, 5):
 df['Crescimento_%'] = df['Valor'].pct_change() * 100
 
 # --- INTERFACE DO DASHBOARD ---
-st.title("📊 Painel de Análise: Dívida Pública Federal (DPF)")
-st.markdown("Estudo sobre a evolução do estoque da dívida brasileira e suas taxas de variação anual.")
+st.markdown("## 📊 Painel de Análise: Dívida Pública Federal (DPF)")
+st.markdown("**Estudo sobre a evolução do estoque da dívida brasileira e suas taxas de variação anual.**")
 
 # Criação das Abas para Navegação
 tab1, tab2 = st.tabs(["📈 Estoque Nominal", "📉 Variação Percentual"])
@@ -59,6 +59,7 @@ with tab1:
         xaxis=dict(type='category', title="Ano"),
         template='plotly_white',
         height=550,
+        margin=dict(t=30, b=0, l=0, r=0),
         legend=dict(orientation="h", y=-0.2, x=0.5, xanchor="center")
     )
     st.plotly_chart(fig1, use_container_width=True)
@@ -88,6 +89,7 @@ with tab2:
         xaxis=dict(type='category', title="Ano"),
         template='plotly_white',
         height=550,
+        margin=dict(t=30, b=0, l=0, r=0),
         legend=dict(orientation="h", y=-0.2, x=0.5, xanchor="center")
     )
     fig2.update_yaxes(title_text="Estoque (Trilhões R$)", secondary_y=False)
